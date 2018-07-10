@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+      <style>
+           *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+           }
+          
+           .zui{
+
+                 width: 500px;
+                 height: 100px;
+                 border: 1px solid black;
+                 margin: 200px auto;
+                 position: relative;
+                 
+           }
+          
+           .box{
+               width: 0;
+               height: 0;
+               position: absolute;
+               left: 0;
+               top: 20px;
+               border-width: 30px;
+               border-radius: 50%;
+               /* 右边透明,形成缺口 */
+               border-color: red transparent red red;
+               border-style: solid;
+               animation: eat 0.3s linear infinite alternate;
+               /* overflow: hidden; */
+
+           }
+            
+              @keyframes eat {
+                  to{
+                      transform: rotateZ(0deg);
+                  }
+              }
+
+
+          
+          .box2{
+               width: 0;
+               height: 0;
+               position: absolute;
+               right: 0;
+               top: 20px;
+               border-width: 30px;
+               border-radius: 50%;
+               /* 右边透明,形成缺口 */
+               border-color: red  red red transparent;
+               border-style: solid;
+               animation: eattwo 0.3s linear infinite alternate;
+           }
+
+
+                @keyframes eattwo {
+                  to{
+                      transform: rotateZ(0deg);
+                  }
+              }
+
+           
+      
+          
+
+
+
+
+            .box5{
+                /* 缺口向上 */
+               transform: rotateZ(-45deg);
+            }
+
+             .box6{
+                 /* 缺口向下 */
+               transform: rotateZ(45deg);
+            }
+           
+            .box3{
+                /* 缺口向上 */
+               transform: rotateZ(-45deg);
+            }
+
+             .box4{
+                 /* 缺口向下 */
+               transform: rotateZ(45deg);
+            }
+
+
+
+
+          .shiwu{
+
+               width: 14px;
+               height: 14px;
+              position: absolute;
+              left: 0px;  
+              top:40px;
+             animation: gogogo 0.8s linear infinite;
+          }
+           
+            @keyframes gogogo {
+                to {
+                    left: 180px;
+                }
+            }
+
+           .shiwu:nth-child(1) {
+               animation-delay: 0.2s;
+           }
+
+           
+           .shiwu:nth-child(2) {
+               animation-delay: 0.4s;
+           }
+
+
+           
+           .shiwu:nth-child(3) {
+               animation-delay: 0.6s;
+           }
+
+
+          
+          .shiwu:nth-child(4) {
+               animation-delay: 0.8s;
+           }
+
+
+
+
+
+                  .shiwu2{
+
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                right:  0px;  
+                top:40px;
+                animation: gogo 0.8s linear infinite;
+                }
+
+                  @keyframes gogo {
+                to {
+                    right: 180px;
+                }
+            }
+
+
+               .k1 {
+               animation-delay: 0.2s;
+           }
+
+           
+           .k2 {
+               animation-delay: 0.4s;
+           }
+
+
+           
+           .k3 {
+               animation-delay: 0.6s;
+           }
+
+
+          
+          .k4 {
+               animation-delay: 0.8s;
+           }
+
+
+
+      </style>
+</head>
+<body>
+       <div class="zui">
+            <div class="shiwu">!</div>
+            <div class="shiwu">啥</div>
+            <div class="shiwu">瞅</div>
+            <div class="shiwu">你</div>
+
+
+             <div class="box box5"></div>
+             <div class="box box6"></div>
+           
+        
+
+             <div class="shiwu2 k1">瞅</div>
+             <div class="shiwu2 k2">你</div>
+             <div class="shiwu2 k3">咋</div>
+             <div class="shiwu2 k4">嘀</div>
+
+
+              <div class="yin"></div>
+             <div class="box2 box3"></div>
+             <div class="box2 box4"></div>
+       </div>
+</body>
+</html>

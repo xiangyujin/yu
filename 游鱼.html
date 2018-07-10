@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        
+     <style>
+     
+      body{
+          background-color: blue;
+      }
+     
+        .one{
+            width: 174px;
+            height: 126px;
+            background: url("../images/fish-12-126.png") 0 0 no-repeat;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: bai 1s steps(11) infinite,you 5s linear infinite;
+
+        }
+
+
+
+             .two{
+            width: 174px;
+            height: 126px;
+            background: url("../images/fish-12-126.png") 0 0 no-repeat;
+            position: absolute;
+            left: 0;
+            top: 120px;
+            animation: bai 1s steps(11) infinite,you 3s linear infinite;
+
+        }
+
+
+                 .three{
+            width: 174px;
+            height: 126px;
+            background: url("../images/fish-12-126.png") 0 0 no-repeat;
+            position: absolute;
+            left: 0;
+            top: 240px;
+            animation: bai 1.8s steps(11) infinite,you 7s linear infinite;
+
+        }
+
+
+                     .four{
+            width: 174px;
+            height: 126px;
+            background: url("../images/fish-12-126.png") 0 0 no-repeat;
+            position: absolute;
+            left: 0;
+            top: 360px;
+            animation: bai 1.3s steps(11) infinite,you 4s ease infinite;
+
+        }
+
+
+
+                   .five{
+            width: 174px;
+            height: 126px;
+            background: url("../images/fish-12-126.png") 0 0 no-repeat;
+            position: absolute;
+            left: 0;
+            top: 500px;
+            animation: bai 1.5s steps(11) infinite,you 6s ease infinite;
+
+        }
+
+
+
+
+
+         @keyframes bai{
+
+             to{
+                 background-position: 0 -1386px;
+             }
+         }
+      
+
+          @keyframes you {
+              0%{
+                  left: 0;
+              }
+              25%{
+                  left: 900px;
+                  transform: rotate(0deg);
+              }
+
+                50%{
+                  left: 900px;
+                  transform: rotate(180deg);
+              }
+
+                75%{
+                  left: 0px;
+                  transform: rotate(180deg);
+              }
+
+                100%{
+                  left: 0px;
+                  transform: rotate(360deg);
+              }
+
+
+          }
+
+
+
+
+
+
+
+     </style>
+
+
+</head>
+<body>
+    <div class="fish one"></div>
+    <div class="fish two"></div>
+    <div class="fish three"></div>
+    <div class="fish four"></div>
+    <div class="fish five"></div>
+</body>
+</html>
